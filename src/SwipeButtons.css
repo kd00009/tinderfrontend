@@ -1,46 +1,55 @@
 .swipeButtons {
-    display: flex;
-   
-    position: fixed;
-    bottom: 50px;
-gap: 56px;
-justify-content: center;
-align-items: center;
-text-align: center;
-    width: 100%;
-    
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  gap: 56px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.swipeButtons__icon {
+  font-size: 6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: transform 0.2s ease-in-out;
+}
+
+.swipeButtons__icon:hover {
+  transform: scale(1.1);
+}
+
+.swipeButtons__repeat {
+  color: #f5b748;
+}
+
+.swipeButtons__left {
+  color: #ec5e6f;
+}
+
+.swipeButtons__star {
+  color: #62b4f9;
+}
+
+.swipeButtons__right {
+  color: #76e2b3;
+}
+
+.swipeButtons__lightning {
+  color: #915dd1;
+}
+
+@media (max-width: 600px) {
+  .swipeButtons {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    bottom: 20px;
   }
-  
+
   .swipeButtons__icon {
-    font-size: 6rem;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-   
-    transition: transform 0.2s ease-in-out;
+    font-size: 4rem;
   }
-  
-  .swipeButtons__icon:hover {
-    transform: scale(1.1);
-  }
-  
-  .swipeButtons__repeat {
-    color: #f5b748;
-  }
-  
-  .swipeButtons__left {
-    color: #ec5e6f;
-  }
-  
-  .swipeButtons__star {
-    color: #62b4f9;
-  }
-  
-  .swipeButtons__right {
-    color: #76e2b3;
-  }
-  
-  .swipeButtons__lightning {
-    color: #915dd1;
-  }
-  
+}
